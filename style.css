@@ -252,12 +252,122 @@ nav .nav-items .follow .icon {
 
 /* Online Games Section End Here */
 
+/* play-instantly section start */
+
+.play-instantly {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0 8rem;
+}
+
+.play-instantly .content {
+  width: 45%;
+  padding: 4rem 0;
+}
+
+.play-instantly .content p {
+  padding: 2rem 2rem 0 0;
+}
+
+.play-instantly .content h1,
+p {
+  line-height: 1.3;
+}
+
+.play-instantly .image {
+  width: 45%;
+  position: relative;
+}
+
+.play-instantly .image .positioned-image {
+  position: absolute;
+  bottom: -25%;
+  left: -16%;
+  width: 50%;
+  /* height: 50%; */
+  transform: translate(-16%, -25%);
+}
+
+/* play-instantly section end */
+
+/* categories section start here */
+
+.categories ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  padding: 8rem 0;
+}
+
+.categories ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.categories ul li:hover {
+  border: 2px solid #ff42a5;
+  border-radius: 5rem;
+}
+
+/* categories section end here */
+
 /* footer Section Start Here */
 
 footer {
   background: #0b0223;
   color: #fff;
 }
+
+footer .logo {
+  padding: 8rem 5rem 3rem;
+  justify-content: center;
+}
+
+footer .footer-links {
+  display: flex;
+  gap: 4rem;
+  font-size: var(--text-font);
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons span {
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  gap: 4rem;
+  font-size: 4rem;
+}
+
+footer .social-icons i {
+  cursor: pointer;
+}
+
+footer .tcpp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+}
+
+footer .copyright {
+  padding: 3rem 0 8rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
 /* footer Section End Here */
 
 /* Media Query for Tablet Device Start */
@@ -304,13 +414,84 @@ footer {
     margin: 5rem 0;
   }
 
-.online-games > h1 {
+  .online-games > h1,
+  .play-instantly .content h1 {
     font-size: calc(1vw + 3.5rem);
   }
 
+  .play-instantly {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .play-instantly .content,
+  .image {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .play-instantly .image {
+    width: 70%;
+  }
+
+  .play-instantly .content p {
+    padding: 2rem 0;
+  }
+
+  .categories ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+  }
+
+  .categories ul li {
+    justify-content: space-around;
+  }
+
+  footer .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  footer .footer-section {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  footer .social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer .social-icons i {
+    cursor: pointer;
+    font-size: calc(1vw + 2.3rem);
+  }
+
+  footer .tcpp-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
 }
 
 /* Media Query for Tablet Device End */
+
+@media screen and (max-width: 890px) {
+  .categories ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+
+  .categories ul li {
+    justify-content: flex-start;
+  }
+}
 
 /* Media Query for Mobile Device Start */
 
@@ -325,8 +506,13 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .online-games > h1 {
+  .online-games > h1,
+  .play-instantly .content h1 {
     font-size: calc(1vw + 3rem);
+  }
+  footer .footer-section {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -353,7 +539,8 @@ footer {
     width: 100%;
   }
 
-  .online-games > h1 {
+  .online-games > h1,
+  .play-instantly .content h1 {
     font-size: calc(1vw + 3rem);
   }
 
@@ -371,6 +558,24 @@ footer {
     padding: 0 2rem;
     text-align: center;
   }
-}
 
+  footer .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* Media Query for Mobile Device End */
+
+@media screen and (max-width: 474px) {
+  .categories ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+  }
+
+  .categories ul li {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+}
