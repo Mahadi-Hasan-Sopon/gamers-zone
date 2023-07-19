@@ -306,19 +306,26 @@ p {
   padding: 8rem 0;
 }
 
+/* .categories ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+} */
+
 .categories ul li {
+  width: 16%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   padding: 0.5rem;
   border: 2px solid transparent;
-  cursor: pointer;
 }
 
 .categories ul li:hover {
   border: 2px solid #ff42a5;
   border-radius: 5rem;
+  cursor: pointer;
 }
 
 /* categories section end here */
@@ -455,12 +462,11 @@ footer .copyright {
 
   .categories ul {
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .categories ul li {
-    justify-content: space-around;
+    width: auto;
   }
 
   footer .footer-links {
@@ -495,18 +501,6 @@ footer .copyright {
 
 /* Media Query for Tablet Device End */
 
-@media screen and (max-width: 890px) {
-  .categories ul {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-  }
-
-  .categories ul li {
-    justify-content: flex-start;
-  }
-}
-
 /* Media Query for Mobile Device Start */
 
 @media screen and (max-width: 768px) {
@@ -517,7 +511,7 @@ footer .copyright {
   }
 
   .online-games .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .online-games > h1,
@@ -527,6 +521,10 @@ footer .copyright {
   footer .footer-section {
     width: 80%;
     margin: 0 auto;
+  }
+  .categories ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -573,23 +571,18 @@ footer .copyright {
     text-align: center;
   }
 
-  footer .footer-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* Media Query for Mobile Device End */
-
-@media screen and (max-width: 474px) {
   .categories ul {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 2rem;
   }
 
   .categories ul li {
-    width: 50%;
-    margin: 0 auto;
     justify-content: flex-start;
+  }
+
+  footer .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
