@@ -103,6 +103,7 @@ nav .nav-items li {
   font-size: var(--text-font);
   font-weight: 500;
   color: #3c354f;
+  cursor: pointer;
 }
 nav .nav-items .follow {
   border-radius: 8px;
@@ -113,6 +114,7 @@ nav .nav-items .follow {
 nav .nav-items .follow .icon {
   font-size: 2.4rem;
   padding-left: 1rem;
+  cursor: pointer;
 }
 
 /* Navbar Section End Here */
@@ -175,6 +177,7 @@ nav .nav-items .follow .icon {
   border: none;
   font-size: var(--text-font);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .banner .banner-content .buttons .pink-btn {
@@ -248,6 +251,7 @@ nav .nav-items .follow .icon {
   border-radius: 1.6rem;
   background: rgba(0, 0, 0, 0.6);
   border: 3px solid #ff42a5;
+  cursor: pointer;
 }
 
 /* Online Games Section End Here */
@@ -341,6 +345,10 @@ footer .footer-links {
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
+}
+
+footer .footer-links li {
+  cursor: pointer;
 }
 
 footer .social-icons span {
