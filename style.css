@@ -326,9 +326,9 @@ footer {
   color: #fff;
 }
 
-footer .footer-content {
+footer .footer-section {
   padding: 8rem 0;
-}  
+}
 
 footer .logo {
   justify-content: center;
@@ -340,6 +340,7 @@ footer .footer-links {
   font-size: var(--text-font);
   justify-content: center;
   align-items: center;
+  padding-top: 4rem;
 }
 
 footer .social-icons span {
