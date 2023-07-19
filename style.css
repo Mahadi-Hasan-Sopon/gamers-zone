@@ -308,6 +308,8 @@ p {
   align-items: center;
   gap: 2rem;
   padding: 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .categories ul li:hover {
