@@ -326,8 +326,11 @@ footer {
   color: #fff;
 }
 
+footer .footer-content {
+  padding: 8rem 0;
+}  
+
 footer .logo {
-  padding: 8rem 5rem 3rem;
   justify-content: center;
 }
 
@@ -365,7 +368,7 @@ footer .tcpp-section {
 }
 
 footer .copyright {
-  padding: 3rem 0 8rem;
+  padding-top: 3rem;
   font-size: 1.6rem;
   text-align: center;
 }
